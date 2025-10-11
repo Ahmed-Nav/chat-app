@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useAuthStore } from "../store/useAuthStore";
+
 import BorderAnimatedContainer from "../components/BorderAnimatedContainer";
 import {
   MessageCircleIcon,
@@ -8,6 +8,7 @@ import {
   LockIcon,
 } from "lucide-react";
 import { Link } from "react-router";
+import { useAuthStore } from "../store/useAuthstore";
 
 function LoginPage() {
   const [formData, setFormData] = useState({ email: "", password: "" });
